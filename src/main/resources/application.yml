@@ -1,0 +1,14 @@
+management:
+  endpoint:
+    health:
+      show-details: ALWAYS
+server:
+  port: 8085
+  servlet.contextPath: /spr-jpa-service
+spring:
+  jpa.hibernate.ddl-auto: update
+  datasource:
+    url: jdbc:mysql://localhost:3306/sample?useSSL=false
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
